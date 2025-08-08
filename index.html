@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Loops & Links</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/png" href="logo.png">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+  
+    <!-- Add HTML markup elements for your web site below -->
+    <!-- navbar
+
+    Purpose
+    - Navigation bar that allows users to jump to different sections of the webpage
+    - Also holds buttons for user settings (dark mode, reduce motion)
+
+    When To Modify
+    - [ ] Project 4 (REQUIRED FEATURE)
+    - [ ] Project 5 (REQUIRED FEATURE) 
+    - [ ] Project 8 (STRETCH FEATURE) 
+    - [ ] Any time between / after
+    -->
+    <div class="navbar-content">
+        <div class="navbar">
+            <ul class="navbar-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><button id="theme-button">Toggle Dark Mode </button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-content" id="home">
+        <div class="header-container">
+            <div class="header-item">  
+                <img id="header-img" src="img/yarn_balls.png" alt="an animated picture of loops of yarn" height = 500>
+
+                <h1 id="title">Loops & Links</h1>
+                <h1 id="catchphrase">Create ~ Vibe ~ Share ~ Inspire</h1>
+
+                <div class="buttons">
+                    <button class="header-button">Register</button>
+                    <button class="header-button">Community Hub</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="revealable">
+        <div class="about-content" id="about">
+            <div class="about-wrapper">               
+                <div class="about-img">
+                    <img id="yarn-bucket" src="img/yarn_bucket.png" alt="orange and tan crochet beanies, scarves, and cup coasters" height="400">
+                </div>
+                <div class="about">
+                    <h1 >About the Event</h1>
+                    <p id="about-details">Connect with fellow crafters, discover trendy handmade creations, and get inspired. 
+                    Enjoy live demos from professional makers, interact with small business owners, 
+                    and explore a vibrant marketplace full of unique, handmade goods. Whether you're here to buy, sell, or simply be inspired. 
+                    This is the place to celebrate creativity. You don’t want to miss out. Join the handmade movement today!</p> 
+                </div>
+            </div>
+            <div class="about-card-wrapper">
+                <div class="about-card">
+                    <div class="about-card-inner">
+                        <div class="about-card-front">
+                            <h1>Who's Invited?</h1>
+                            <img src="img/people.png" alt="" height="300">
+                        </div>
+                        <div class="about-card-back">
+                            <p>All skill levels! <br>
+                            Friends & Family <br> Community Members!</p>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-inner">
+                        <div class="about-card-front">
+                            <h1>Who to Expect?</h1>
+                            <img src="img/crochet-vendor.png" alt="" height="300">
+                        </div>
+                        <div class="about-card-back">
+                            <p>Vendors <br> Business Owners <br> Professional Crafters</p>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-inner">
+                        <div class="about-card-front">
+                            <h1>Live Demos</h1>
+                            <img src="img/crochet-items.png" alt="" height="300">
+                        </div>
+                        <div class="about-card-back">
+                            <p>Crochet Scarves <br> Crochet Beanies <br> Crochet Cup Coasters</p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="revealable">
+        <div class="schedule-content">
+            <h1 id="schedule">Tune in for the Schedule</h1>
+            <div class="schedule-container"> 
+                <div class="schedule-item">                   
+                    <h3 class="schedule-time">1100 PM</h3>
+                    <div class="schedule-details">
+                        <h3>Welcome</h3>
+                        <p> Walk around, greet your fellow community members, 
+                        visit seller stands and view the creations. </p>
+                    </div>    
+                        
+                </div>
+                <div class="schedule-item">
+                    <h3 class="schedule-time">1130 PM</h3>                   
+                    <div class="schedule-details">
+                        <h3>Meet the Speakers</h3>
+                        <p>Gather around and hear from professional 
+                        and talented people.</p>
+                    </div>
+                        
+                </div>
+                <div class="schedule-item">
+                    <h3 class="schedule-time">100 PM</h3>                                       
+                    <div class="schedule-details"> 
+                        <h3>Promations</h3>
+                    <p>Opportunity to promote your business.</p>
+                    </div>
+                    
+                </div>
+                <div class="schedule-item">                   
+                    <h3 class="schedule-time">130 PM</h3>
+                    <div class="schedule-details"> 
+                        <h3>Live Demos</h3>
+                        <p> Tune in for some live demonstrations of creating 
+                        some crochet projects. </p>
+                    </div>
+                    
+                </div>
+                <div class="schedule-item">
+                    <h3 class="schedule-time">300 PM</h3>   
+                    <div class="schedule-details">
+                        <h3>Chill & Relax</h3>
+                        <p>Kick back and meet new people, start projects, the time is yours!</p>
+                    </div>
+                    
+                </div>
+                <div class="schedule-item">
+                    <h3 class="schedule-time">430 PM</h3>                                       
+                    <div class="schedule-details">
+                        <h3>Wrap Up</h3> 
+                        <p>Closing Remarks.</p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- rsvp
+
+    Purpose
+    - Section for users to sign up for the event
+    - Contains a form for users to input their information, 
+    and a list of other users who have signed up
+
+    When To Modify
+    - [ ] Project 6 (REQUIRED FEATURE) 
+    - [ ] Project 6 (STRETCH FEATURE) 
+    - [ ] Any time after
+    --> 
+    <div class="revealable">
+        <div id="rsvp">
+            <h1 id="rsvp-title">RSVP</h1>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                <!-- info goes here -->
+                    <h3>Don't miss out!</h3>
+                    <h4> Meet and hear from talented guest speakers, explore and shop one-of-a-kind handmade creations, 
+                    and discover something new! New to crafting? Join live demonstrations and try your hand at a new hobby.
+                    No experience needed. RSVP now to save your spot and be part of this exciting creative experience! </h4>
+                </div>
+                
+                <div class="participants-content">
+                    <div class="rsvp-participants">
+                        <p>☄️ Marcy from Maryland has RSVP'd.</p>
+                        <p>☄️ Gabriella from New York has RSVP'd.</p>
+                        <p>☄️ Jennifer from New Jersey has RSVP'd.</p>
+                        <p>☄️ Paul from Iowa has RSVP'd.</p>
+                    </div>
+                    <p id="rsvp-count">🔔 3 people have RSVP'd to this event!</p>
+                    <div class="participants"></div>
+                </div>
+            </div>
+            
+            <!--- Sign RSVP Form --->
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <form id="rsvp-form" title="rsvp-form" class="rsvp-form">
+                        <h2> RSVP FORM</h2>
+
+                        <!-- form inputs go here -->
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Jane Doe" required/>
+                        
+                        <label for="home-state"> Your Home State</label> 
+                        <input type="text" id="home-state" placeholder="Home State" required/>
+                        
+                        <label for="email">Your Email Address</label> 
+                        <input type="text" id="email" placeholder="name@example.com" required/>
+
+                        <input type="button" id="rsvp-button" value="Submit RSVP" >
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="revealable">  
+        <div class="links-content">
+            <h1 id="links">Check Us Out</h1>
+        <div class="header-links">
+                <div class="header-link">
+                    <a>
+                        <article>
+                            <h3> <a href="#loops&links">Loops & Links on Instagram</a></h3>
+                            <p>Look out for other opportunities, new postings on our YouTube channel, and new patterns .</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="header-link">
+                    <a>
+                        <article>
+                                <h3> <a href="#otherevents">Check out Our Other Events</a></h3>
+                            <p>Check out the calender for new updates on events that's happening all year!</p>
+                            </article>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="footer-content">
+            <div class="footer">
+                <a href="#LearnMore">Learn More /</a>
+                <a href="#ContactUs">Contact Us</a>
+            </div>
+        </div>
+        
+<!-- success modal
+
+Purpose
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+    <div id="success-modal" class="modal">
+        <div class="modal-container">
+            <button id="exit">X</button>
+            <div id="modal-item">
+                <p></p>
+            </div>
+            <div id="modal-item">
+                <img id="modal-img" src="img/basket.png" height = 150>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    </body>
+</html>

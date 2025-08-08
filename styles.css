@@ -1,0 +1,897 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+  scroll-padding-top: 50px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+  color: #3b0404; 
+}
+
+h3 {
+  color: #3b0404;
+}
+
+p {
+  color:#3b0404;
+  line-height: 40px;
+}
+
+
+.header-button {
+    /* Example Style, replace with your own! */
+    background-color: #fcd055;    /* button color */
+    color: #3b0404;               /* text color */
+    font-size: medium;
+    font-weight: bold;
+    border: none;               /* hides the default border */
+    padding: 9px 15px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+  color:#750606;
+  background-color: #f7ca7c;
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+#img2{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.header-content { /* Example A: This styles elements with class="header" */
+  padding: 60px 20px;
+  display: flex;
+  text-align: center;
+}
+
+.header-container{
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 800px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#header-img{
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  background-color:#feebb8;
+  color: #3c0909;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+#catchphrase {
+  color:#7e5b65;
+  text-align: right;
+  font-size: 18px;
+}
+
+.buttons{
+  display: flex;
+  gap: 16px;
+}
+
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #641221;
+  margin: 0%;
+  height: 12px;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:link{
+  color:#fffcfb;
+}
+.footer a:visited{
+  color:#913862;   
+}
+.footer a:hover{
+  color:#f8f8f8;
+}
+.footer a:active{
+  color:#8f538358;
+}
+
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: #641221;
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+  padding: 20px 0;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+
+.navbar ul li {
+  display: flex;
+  float: left;
+  margin: 10px;  
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding-left: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+  color: #fffb00;
+}
+
+.navbar a:link{
+  color:#fffcfb;
+}
+.navbar a:visited{
+  color:#fffcfb;   
+}
+.navbar a:active{
+  color:#8f538358;
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.about-wrapper{
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.about{
+  flex: 1;
+}
+
+#about-details{
+  background-color: #f3f4ec54;
+  padding: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+
+.about-card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-card{
+  width: 330px;
+  height: 450px;
+  margin: 15px auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.about-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.about-card:hover .about-card-inner{
+  transform: rotateY(180deg);
+}
+
+.about-card-front,
+.about-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.about-card-front{
+  background: #f7ca7c;
+  border: 6px solid #641221;
+}
+
+.about-card-back{
+  background: #f7ca7c;
+  transform: rotateY(180deg);
+}
+
+.about-card-back p{
+  text-align: center;
+  font-size: 25px;
+}
+
+body.dark-mode .about-card-front{
+  background: #6a0424;
+}
+
+body.dark-mode .about-card-front p,
+body.dark-mode .about-card-back p{
+  color: #fdfdfd;
+}
+
+body.dark-mode .about-card-back{
+  background: #6a0424bf;
+}
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+#schedule{
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule-item{
+  display: flex;
+  gap: 24px;
+  background-color: #fff3d3bd;
+  border-left: 5px solid #9c2d41;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  align-items: flex-start;
+}
+
+.schedule-item 
+.schedule-time{
+  font-weight: bold;
+  color:#682639;
+  width: 90px;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: larger;
+}
+
+.schedule-item 
+.schedule-details h3{
+  margin: 0 0 4px;
+  font-size: 19.2px;
+}
+
+.schedule-item 
+.schedule-details p{
+  margin: 0%;
+  font-size: 15.2px;
+  line-height: 1.4;
+}
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+#links{
+  margin: 30px;
+  padding: 10px;
+  padding-top: 50px;
+  text-align: center
+}
+
+a:link{
+  color:#b95c50;
+}
+a:visited{
+  color:#913862;   
+}
+a:hover{
+  color:#de847b;
+}
+a:active{
+  color:#8f538358;
+}
+.header-links{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header-link{
+  display: flex;
+  background-color:#ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  justify-content:center;
+  align-items:center;
+  text-align: center
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+
+.rsvp-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.rsvp-para{
+  width: 55%;
+  padding-right: 10px;
+  line-height: 40px;
+}
+
+.rsvp-participants {
+  width: 55%;
+  padding-left: 10px;
+}
+
+.rsvp-participants p,
+.rsvp-para  {
+  color: #3b0404;
+}
+
+.participants-content{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+#rsvp-title{
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 15px;
+}
+
+#rsvp-button{
+  background-color: #fcd055;
+  text-align: center;
+  color: #3b0404;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 2px;
+  border-style: solid;
+  display: flex;
+  display: block;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 16px;
+  border-color: #eaae0c;
+  cursor: pointer;
+}
+
+
+#rsvp-button:hover{
+  color:#750606;
+  background-color: #f7ca7c;}
+
+.form-container{
+    padding: 30px;  
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+
+/* Add other rsvp-related selectors here */
+
+.form-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    background-image: url(img/knit_stich.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  color: black;
+  /* Set border-color and background */
+  border-color: rgb(231, 1, 1);
+  background-color: rgb(238, 211, 211);
+}
+
+::placeholder{
+  color: #52041a52;
+  font-size: 14px;
+}
+
+input{
+  background-color: #eac78b;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  border-style: none;
+  
+}
+
+input:focus{
+    background-color: #ffffff;
+}
+
+.form-container h2{
+    text-align: center;
+    color: #682639;
+}
+
+
+
+label{
+    font-size: 18px;
+    font-weight: 800;
+    color: #6a0424;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+form{
+    padding: 20px;
+    background-color: #feebb8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+body.dark-mode form{
+  background-color: #641221;
+  color: #dc9fb2;
+}
+
+body.dark-mode label{
+  color: #ffffff;
+}
+
+body.dark-mode input{
+  background-color: #ffffff38;
+}
+
+body.dark-mode ::placeholder{
+  color: #ccb48bbe;
+}
+
+body.dark-mode input:focus{
+    background-color: #ffffff;
+}
+
+body.dark-mode .form-wrapper{
+
+    background-image: url(img/knit_stich2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/*** Animations  ***
+  
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+
+  When To Modify:
+  - [ ] Project 8 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.revealable {
+  --reveal-distance: 150px; /* CSS Variable */
+
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 2s ease;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+  scroll-margin-top: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    position: relative;
+    background-color: #ffe2b0;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+    border-radius: 24px;
+    border-style: solid;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-item p{
+    /* Optional: Style individual elements within the modal */
+  font-size: 20px;
+}
+
+#exit{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border-style: none;
+  border-radius: 4px;
+  background-color: #ffe2b0;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#exit:hover{
+  background-color: #e63946;
+  color: #ffff;
+}
+
+/* Default dark mode style */
+.dark-mode{
+  background-color: var(--bg-color-dark-mode);
+}
+
+body.dark-mode .header-button{
+  background-color: #641221;
+  color: #ffff;
+}
+
+body.dark-mode .header-button:hover{
+  background-color: #731526;
+  color: #f7ca7c;
+}
+
+
+#theme-button{
+background-color: #ebb049;
+border-radius: 5px;
+border-color: #f7ca7c;
+font-weight: 600;
+cursor: pointer;
+}
+
+#theme-button:hover{
+  color: #641221;
+  background-color: #e2a946;
+}
+
+body.dark-mode #theme-button{
+  border-color: #641221;
+}
+
+body.dark-mode #title{
+  background-color: #641221;
+  color: #fff1d9;
+}
+
+body.dark-mode .rsvp-para h4,
+body.dark-mode .rsvp-participants p,
+body.dark-mode .rsvp-para h3,
+body.dark-mode .participants p,
+body.dark-mode .participants-content p,
+body.dark-mode form
+{
+  color: #fff;
+}
+
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1,
+.dark-mode h2{
+  color: var(--text-color-dark-mode);
+}
+
+body.dark-mode .details h1{
+  color: #682639;
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+  color: #d2cff5;
+}
+
+body.dark-mode #catchphrase,
+body.dark-mode #about-details{
+  color: var(--text-color-dark-mode);
+}
+
+body.dark-mode .navbar ul{
+  background-color: #641221;
+}
+
+body.dark-mode .navbar ul li a:link{
+  color: #ffffff;
+}
+
+body.dark-mode .navbar ul li a:hover{
+  color: #fff30e;
+}
+
+body.dark-mode .footer {
+  background-color: #3E001F;
+}
+
+body.dark-mode .footer a:link{
+  color: #ffffff;
+}
+
+body.dark-mode .footer a:hover{
+  color: #f8f8f8;
+}
+
+body.dark-mode .schedule-item{
+  border-left: 5px solid #eac78b;
+  background-color: #641221;
+
+}
+
+body.dark-mode .schedule-details h3,
+body.dark-mode .schedule-time{
+  color: #fcfcfc;
+  font-size: larger;
+}
+body.dark-mode .schedule-details p{
+  color: #f5f8f9;
+}
+
+body.dark-mode .details p{
+  color: #262a20;
+}
+
+body.dark-mode .header-button a:hover{
+  color: #682639;
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color:#FAF7F4;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #942d45;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
